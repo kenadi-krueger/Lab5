@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <h1> Exercise 2</h1>
+    </head>
+    <body>
+      <img src= "1.jpg" alt="picture" width="500" height="500">
+      <button onclick="next()"> Next </button><br>
+      <button onclick="previous()"> Previous </button><br>
+      <script>
+        var images = ["1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg"]
+        var index = 0;
+
+        function next()
+        {
+          image = 0;
+          if(index == 4)
+            image = images[0];
+
+          else
+            image = images[index+1]
+
+            var picture_url = `${image}.jpg`;
+            document.getElementById("picture").src = picture_url;
+        }
+
+        function previous()
+        {
+          if(index == 0)
+            image = images[4];
+
+          else
+            image = images[index-1]
+
+            var picture_url = `${image}.jpg`;
+            document.getElementById("picture").src = picture_url;
+        }
+      </script>
+    </body>
+</html>

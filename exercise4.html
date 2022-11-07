@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <h1> Exercise 4
+            <link href="myStyle.css"
+        rel="stylesheet"
+        type="text/css"/>
+        </h1>
+    </head>
+    <body>
+      <p>Testing paragraph</p>
+
+      Enter a value for border: <input type="text" id="border" value=""><br>
+      Enter a value for background: <input type="text" id="background" value=""><br>
+      <script>
+        border = document.getElementbyID("border");
+        background = document.getElementbyID("background");
+
+      var border_red = document.getElementById("border_red").value;
+      var border_green = document.getElementById("border_green").value;
+      var border_blue = document.getElementById("border_blue").value;
+      var border_width = document.getElementById("border_width").value;
+      var bg_red = document.getElementById("bg_red").value;
+      var bg_green = document.getElementById("bg_green").value;
+      var bg_blue = document.getElementById("bg_blue").value;
+
+      var tag = document.getElementById("paragraph");
+      tag.style.borderColor = `rgb(${border_red}, ${border_green}, ${border_blue})`;
+      tag.style.width = border_width;
+      tag.style.backgroundColor = `rgb(${bg_red}, ${bg_green}, ${bg_blue})`;
+
+      </script>
+      
+      <p>
+        Testing...
+      </p>
+    </body>
+</html>

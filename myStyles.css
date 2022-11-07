@@ -1,0 +1,55 @@
+h1
+{
+ background-color: rgb(228, 41, 38); color: white;
+}
+
+body
+{
+ background-color: rgb(240, 177, 210);
+}
+
+p1
+{
+    color: rgb(230, 94, 117);font-size: 22pt;
+}
+
+p2
+{
+    font-size: 16pt;   
+}
+
+a1
+{
+    color: red;
+}
+
+a2
+{
+    color: red;
+}
+
+p.song
+{
+ color: rgb(145, 74, 231);
+ background-color: black;
+}
+
+a3
+{
+    color: red;
+}
+
+a1:hover
+{
+ color: rgb(165, 16, 120)
+}
+
+a2:hover
+{
+ color: rgb(165, 16, 120)
+}
+
+a3:hover
+{
+ color: rgb(165, 16, 120)
+}
